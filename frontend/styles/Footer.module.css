@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  padding: 34px 0 44px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-subtle);
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 6px;
+}
+
+.brandWordmark {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}

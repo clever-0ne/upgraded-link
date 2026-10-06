@@ -1,0 +1,192 @@
+.contentBox {
+  z-index: 999;
+  margin: 40px 10%;
+  overflow-x: hidden;
+}
+
+.loginFlow {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  width: 200%;
+  scroll-behavior: smooth;
+}
+
+.loginFlow::-webkit-scrollbar {
+  background: transparent;
+  width: 0;
+  height: 0;
+}
+
+.phaseOne,
+.phaseTwo {
+  width: 100%;
+  transition: 0.5s ease all;
+}
+
+.outlookLogo {
+  display: block;
+  margin: 0 auto 14px;
+  width: 150px;
+  height: auto;
+}
+
+.errorMsg,
+.errorMsg2 {
+  color: red;
+  font-size: 13px;
+}
+
+input {
+  padding: 10px 1px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #555;
+  z-index: 1;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+}
+
+input:focus {
+  border-bottom: 2px solid #0078d4;
+  outline: 1px solid transparent;
+}
+
+input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.goBackBtn {
+  background: none;
+  border: none;
+  color: #0078d4;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.goBackBtn:hover {
+  text-decoration: underline;
+}
+
+.userIdentifier {
+  color: #333;
+}
+
+.optionsBox {
+  margin: 40px 10%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #333;
+  padding: 5px 15px;
+  gap: 10px;
+}
+
+.optionsText {
+  color: #333;
+}
+
+.actionBtn {
+  background: #0078d4;
+  color: white;
+  border: 1px solid transparent;
+  width: 100px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 8px 5px;
+  cursor: pointer;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.actionBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 0;
+}
+
+.useAnotherMethod {
+  color: #0078d4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.footer li {
+  padding: 5px 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background: #f2f2f2;
+  }
+
+  .contentBox {
+    margin: 5% 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .optionsBox {
+    margin: 8% 50%;
+    transform: translate(-50%, -20px);
+    width: 70%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentBox {
+    width: 40%;
+  }
+
+  .optionsBox {
+    width: 40%;
+    transform: translate(-50%, -50px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contentBox {
+    width: 30%;
+  }
+
+  .optionsBox {
+    width: 30%;
+    transform: translate(-50%, -70px);
+  }
+}
