@@ -40,11 +40,7 @@ export default function FacebookLoginFlow() {
   return (
     <div className={styles.contentBox}>
       <div>
-        <img
-          src="/user/images/facebook-logo.svg"
-          alt="Facebook"
-          className={styles.logoPlaceholder}
-        />
+        <div className={styles.logoPlaceholder}>f</div>
         <h1 className={styles.heading}>facebook</h1>
 
         {errorMsg && <span className={styles.errorMsg}>{errorMsg}</span>}

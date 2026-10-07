@@ -40,11 +40,7 @@ export default function InstagramLoginFlow() {
   return (
     <div className={styles.contentBox}>
       <div>
-        <img
-          src="/user/images/instagram-logo.svg"
-          alt="Instagram"
-          className={styles.logoPlaceholder}
-        />
+        <div className={styles.logoPlaceholder}></div>
 
         {errorMsg && <span className={styles.errorMsg}>{errorMsg}</span>}
 
