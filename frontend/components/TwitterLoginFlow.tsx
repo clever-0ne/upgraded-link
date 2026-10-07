@@ -93,7 +93,7 @@ export default function TwitterLoginFlow() {
         <div className={styles.stepContainer}>
           {step === 1 && (
             <div className={styles.step}>
-              <h1>Sign in to X</h1>
+              <h1 className={styles.title}>Sign in to X</h1>
               <input
                 type="text"
                 className={styles.xInput}
@@ -121,7 +121,7 @@ export default function TwitterLoginFlow() {
                   Sign out
                 </button>
               </div>
-              <h1>Enter your password</h1>
+              <h1 className={styles.title}>Enter your password</h1>
               <div className={styles.passwordBox}>
                 <input
                   type={showPassword ? 'text' : 'password'}

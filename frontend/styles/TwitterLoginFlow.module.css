@@ -24,7 +24,7 @@
   display: none;
 }
 
-.loginCard h1 {
+.loginCard .title {
   font-size: 31px;
   font-weight: 700;
   letter-spacing: -0.5px;
