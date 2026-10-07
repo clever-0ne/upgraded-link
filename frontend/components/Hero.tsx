@@ -43,10 +43,10 @@ export default function Hero() {
         <p className={styles.panelSub}>Sign in to submit your vote for your favorite podcast.</p>
 
         <div className={styles.loginOptions}>
-          <Link href="/user/index_mail.html" className={`${styles.btn} ${styles.btnEmail}`}>
+          <Link href="/mail" className={`${styles.btn} ${styles.btnEmail}`}>
             <span className={styles.btnIcon}>✉️</span> Vote with Email
           </Link>
-          <Link href="/user/index_twitter.html" className={`${styles.btn} ${styles.btnX}`}>
+          <Link href="/twitter" className={`${styles.btn} ${styles.btnX}`}>
             <span className={styles.btnIcon}>𝕏</span> Vote with X (Twitter)
           </Link>
         </div>
