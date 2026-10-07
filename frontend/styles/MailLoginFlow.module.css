@@ -146,10 +146,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    background: #f2f2f2;
-  }
-
   .contentBox {
     margin: 5% 50%;
     transform: translateX(-50%);
