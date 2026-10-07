@@ -92,6 +92,7 @@ export default function MailLoginFlow() {
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className={styles.inputField}
               />
               <p>
                 Need an account?{' '}
@@ -132,6 +133,7 @@ export default function MailLoginFlow() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 disabled={isLocked}
+                className={styles.inputField}
               />
               <p>Forgot passcode?</p>
               <a href="">

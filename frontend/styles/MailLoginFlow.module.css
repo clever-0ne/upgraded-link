@@ -37,7 +37,7 @@
   font-size: 13px;
 }
 
-input {
+.inputField {
   padding: 10px 1px;
   width: 100%;
   border: 1px solid transparent;
@@ -46,12 +46,12 @@ input {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
 }
 
-input:focus {
+.inputField:focus {
   border-bottom: 2px solid #0078d4;
   outline: 1px solid transparent;
 }
 
-input:disabled {
+.inputField:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
