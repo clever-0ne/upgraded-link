@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '@/styles/PodcastCard.module.css'
 
 interface PodcastCardProps {
@@ -19,10 +18,9 @@ export default function PodcastCard({
   return (
     <div className={styles.card} style={{ animationDelay }}>
       <div className={styles.cardImgWrapper}>
-        <Image
+        <img
           src={image}
           alt={alt}
-          fill
           className={styles.cardImg}
         />
       </div>

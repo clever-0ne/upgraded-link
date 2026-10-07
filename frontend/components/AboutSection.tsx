@@ -1,14 +1,11 @@
-import Image from 'next/image'
 import styles from '@/styles/AboutSection.module.css'
 
 export default function AboutSection() {
   return (
     <section className={styles.aboutSection}>
-      <Image
+      <img
         src="/images/new.jpg"
         alt="About PodStream Global"
-        width={600}
-        height={400}
         className={styles.aboutImg}
       />
       <div className={styles.aboutContent}>
