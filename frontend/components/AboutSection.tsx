@@ -12,8 +12,8 @@ export default function AboutSection() {
         className={styles.aboutImg}
       />
       <div className={styles.aboutContent}>
-        <h2>The Collaborative Ecosystem</h2>
-        <p>
+        <h2 className={styles.aboutHeading}>The Collaborative Ecosystem</h2>
+        <p className={styles.aboutText}>
           PodStream Global unites creators and listeners on a single audio-first platform across all Global
           countries. Combining a world-class streaming pipeline with cutting-edge tech infrastructure, this platform
           empowers creators, supports fair monetization, and aims to enrich the Global podcast ecosystem by delivering

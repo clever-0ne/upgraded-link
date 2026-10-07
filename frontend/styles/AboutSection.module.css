@@ -22,14 +22,14 @@
   flex: 1;
 }
 
-.aboutContent h2 {
+.aboutHeading {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 16px;
   color: var(--text);
 }
 
-.aboutContent p {
+.aboutText {
   color: var(--text-muted);
   font-size: 1.08rem;
 }
