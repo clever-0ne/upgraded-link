@@ -1,0 +1,17 @@
+{
+  "name": "podstream-global-upgrade",
+  "version": "1.0.0",
+  "description": "PodStream Global - Unified frontend and backend for Vercel",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend/backend"
+  ],
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend/backend && npm run dev",
+    "build": "npm run build --workspace=frontend && npm run build --workspace=backend/backend",
+    "start": "npm start --workspace=backend/backend"
+  },
+  "devDependencies": {}
+}

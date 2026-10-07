@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/next",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    },
+    {
+      "src": "backend/backend/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/backend/src/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_API_URL": {
+      "description": "API URL for frontend"
+    },
+    "PORT": {
+      "description": "Backend server port",
+      "default": "3001"
+    },
+    "HOST": {
+      "description": "Backend server host",
+      "default": "0.0.0.0"
+    },
+    "ADMIN_KEY": {
+      "description": "Admin dashboard secret key"
+    }
+  }
+}
