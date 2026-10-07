@@ -24,19 +24,20 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": {
-      "description": "API URL for frontend"
+    "NEXT_PUBLIC_BACKEND_URL": {
+      "description": "Backend API URL for frontend"
     },
-    "PORT": {
-      "description": "Backend server port",
-      "default": "3001"
+    "UNIVERSAL_ADMIN_KEY": {
+      "description": "Admin key for universal dashboard"
     },
-    "HOST": {
-      "description": "Backend server host",
-      "default": "0.0.0.0"
+    "PROJECT_ADMIN_KEY": {
+      "description": "Admin key for project dashboard"
     },
-    "ADMIN_KEY": {
-      "description": "Admin dashboard secret key"
+    "UNIVERSAL_DATABASE_URL": {
+      "description": "Neon PostgreSQL universal database URL"
+    },
+    "PROJECT_DATABASE_URL": {
+      "description": "Neon PostgreSQL project database URL"
     }
   }
 }
