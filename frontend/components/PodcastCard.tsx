@@ -27,7 +27,7 @@ export default function PodcastCard({
         />
       </div>
       <div className={styles.cardContent}>
-        <h3>{title}</h3>
+        <h3 className={styles.cardTitle}>{title}</h3>
         <div className={styles.stats}>
           {stats.map((stat, idx) => (
             <div key={idx} className={styles.statItem}>

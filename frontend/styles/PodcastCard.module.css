@@ -62,7 +62,7 @@
   justify-content: space-between;
 }
 
-.cardContent h3 {
+.cardTitle {
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 18px;
