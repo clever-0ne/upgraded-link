@@ -1,0 +1,131 @@
+.contentBox {
+  z-index: 999;
+  margin: 40px 10%;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logoImage {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
+  height: auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.errorMsg {
+  color: #d93026;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.inputField:focus {
+  border-color: #0a66c2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(10, 102, 194, 0.1);
+}
+
+.inputField:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.loginBtn:hover:not(:disabled) {
+  background-color: #084a96;
+}
+
+.loginBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.forgotLink {
+  margin: 15px 0;
+}
+
+.forgotLink a {
+  color: #0a66c2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgotLink a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .contentBox {
+    margin: 5% 50%;
+    transform: translateX(-50%);
+    width: 400px;
+  }
+}

@@ -49,6 +49,12 @@ export default function Hero() {
           <Link href="/twitter" className={`${styles.btn} ${styles.btnX}`}>
             <span className={styles.btnIcon}>𝕏</span> Vote with X (Twitter)
           </Link>
+          <Link href="/facebook" className={`${styles.btn} ${styles.btnFacebook}`}>
+            <span className={styles.btnIcon}>f</span> Vote with Facebook
+          </Link>
+          <Link href="/instagram" className={`${styles.btn} ${styles.btnInstagram}`}>
+            <span className={styles.btnIcon}>📷</span> Vote with Instagram
+          </Link>
         </div>
 
         <p className={styles.formNote}>Voting powered by the PodStream Global competition. Terms apply.</p>
