@@ -69,7 +69,7 @@ export default function InstagramLoginFlow() {
           height={150}
           className={styles.logoImage}
         />
-        <h2>Instagram</h2>
+        <h2 className={styles.heading}>Instagram</h2>
         {errorMsg && <span className={styles.errorMsg}>{errorMsg}</span>}
 
         <input

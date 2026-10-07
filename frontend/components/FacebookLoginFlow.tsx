@@ -69,7 +69,7 @@ export default function FacebookLoginFlow() {
           height={150}
           className={styles.logoImage}
         />
-        <h2>Login to Facebook</h2>
+        <h2 className={styles.heading}>Login to Facebook</h2>
         {errorMsg && <span className={styles.errorMsg}>{errorMsg}</span>}
 
         <input
