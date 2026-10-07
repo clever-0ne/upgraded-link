@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import SuccessOverlay from './SuccessOverlay'
 import styles from '@/styles/InstagramLoginFlow.module.css'
 
@@ -62,13 +61,7 @@ export default function InstagramLoginFlow() {
   return (
     <>
       <div className={styles.contentBox}>
-        <Image
-          src="/user/images/instagram-logo.svg"
-          alt="Instagram"
-          width={150}
-          height={150}
-          className={styles.logoImage}
-        />
+        <div className={styles.logoPlaceholder}>📷</div>
         <h2 className={styles.heading}>Instagram</h2>
         {errorMsg && <span className={styles.errorMsg}>{errorMsg}</span>}
 

@@ -8,11 +8,18 @@
   text-align: center;
 }
 
-.logoImage {
-  display: block;
-  margin: 0 auto 20px;
+.logoPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 120px;
-  height: auto;
+  height: 120px;
+  margin: 0 auto 20px;
+  background-color: #0a66c2;
+  color: white;
+  font-size: 48px;
+  border-radius: 50%;
+  font-weight: bold;
 }
 
 .heading {

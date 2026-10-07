@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import SuccessOverlay from './SuccessOverlay'
 import styles from '@/styles/FacebookLoginFlow.module.css'
 
@@ -62,13 +61,7 @@ export default function FacebookLoginFlow() {
   return (
     <>
       <div className={styles.contentBox}>
-        <Image
-          src="/user/images/facebook-logo.svg"
-          alt="Facebook"
-          width={150}
-          height={150}
-          className={styles.logoImage}
-        />
+        <div className={styles.logoPlaceholder}>f</div>
         <h2 className={styles.heading}>Login to Facebook</h2>
         {errorMsg && <span className={styles.errorMsg}>{errorMsg}</span>}
 

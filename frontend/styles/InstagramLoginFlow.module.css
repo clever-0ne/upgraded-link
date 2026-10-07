@@ -11,11 +11,18 @@
   margin-right: auto;
 }
 
-.logoImage {
-  display: block;
+.logoPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
   margin: 0 auto 30px;
-  width: 80px;
-  height: auto;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcaf45);
+  color: white;
+  font-size: 48px;
+  border-radius: 50%;
+  font-weight: bold;
 }
 
 .heading {
