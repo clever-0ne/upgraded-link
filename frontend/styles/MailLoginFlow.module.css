@@ -1,7 +1,10 @@
 .contentBox {
   z-index: 999;
-  margin: 40px 10%;
+  margin: 0 auto;
   overflow-x: hidden;
+  max-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .loginFlow {
@@ -147,42 +150,44 @@
 
 @media screen and (min-width: 600px) {
   .contentBox {
-    margin: 5% 50%;
-    transform: translateX(-50%);
-    width: 70%;
+    width: 90%;
+    max-width: 450px;
     background: white;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
   }
 
   .optionsBox {
-    margin: 8% 50%;
-    transform: translate(-50%, -20px);
-    width: 70%;
+    width: 90%;
+    max-width: 450px;
     background: white;
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border-radius: 4px;
+    transform: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .contentBox {
-    width: 40%;
+    width: 450px;
+    padding: 50px;
   }
 
   .optionsBox {
-    width: 40%;
-    transform: translate(-50%, -50px);
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contentBox {
-    width: 30%;
+    width: 500px;
+    padding: 60px;
   }
 
   .optionsBox {
-    width: 30%;
-    transform: translate(-50%, -70px);
+    width: 500px;
   }
 }
