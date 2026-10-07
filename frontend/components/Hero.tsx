@@ -7,7 +7,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.heroText}>
         <span className={styles.competitionPill}>PodStream Contest 2026</span>
-        <h1>
+        <h1 className={styles.title}>
           The Ultimate <span className={styles.highlight}>Streamer Contest</span>
         </h1>
         <Soundwave />
@@ -18,21 +18,21 @@ export default function Hero() {
         <p className={styles.sponsorSub}>
           The official voting hub of the <span className={styles.brandWordmark}>PodStream Global</span> network
         </p>
-        <p>
+        <p className={styles.description}>
           Discover, vote, and engage with the world&apos;s best podcasts. Join millions of listeners in shaping the
           future of audio content right now.
         </p>
         <div className={styles.heroStats}>
           <div className={styles.heroStat}>
-            <strong>4</strong>
+            <strong className={styles.statValue}>4</strong>
             <span>Nominees</span>
           </div>
           <div className={styles.heroStat}>
-            <strong>1</strong>
+            <strong className={styles.statValue}>1</strong>
             <span>Winner</span>
           </div>
           <div className={styles.heroStat}>
-            <strong>∞</strong>
+            <strong className={styles.statValue}>∞</strong>
             <span>Listeners</span>
           </div>
         </div>

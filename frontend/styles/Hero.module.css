@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.heroText h1 {
+.title {
   font-size: 4rem;
   font-weight: 900;
   line-height: 1.05;
@@ -79,7 +79,7 @@
   margin-bottom: 28px;
 }
 
-.heroText p {
+.description {
   font-size: 1.18rem;
   color: var(--text-muted);
   max-width: 620px;
@@ -98,7 +98,7 @@
   align-items: center;
 }
 
-.heroStat strong {
+.statValue {
   display: block;
   font-size: 1.6rem;
   font-weight: 800;
