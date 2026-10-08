@@ -80,11 +80,11 @@ export default function MailLoginFlow() {
               <Image
                 src="/user/images/outlook-logo.svg"
                 alt="Outlook"
-                width={150}
-                height={150}
+                width={120}
+                height={120}
                 className={styles.outlookLogo}
               />
-              <h2>Login</h2>
+              <h2 className={styles.heading}>Login</h2>
               {errorMsg && <span className={styles.errorMsg}>{errorMsg}</span>}
               <input
                 type="email"
@@ -94,20 +94,13 @@ export default function MailLoginFlow() {
                 onChange={(e) => setEmail(e.target.value)}
                 className={styles.inputField}
               />
-              <p>
-                Need an account?{' '}
-                <a href="#">
-                  <span>Request access</span>
-                </a>
-              </p>
-              <p>
-                Alternative login options{' '}
-                <Image src="/user/images/key.JPG" width={16} height={16} alt="" />
-              </p>
               <div className={styles.btnContainer}>
                 <button onClick={handleContinue} className={styles.actionBtn}>
                   Continue
                 </button>
+              </div>
+              <div className={styles.forgotLink}>
+                <a href="#">Forgot passcode?</a>
               </div>
             </div>
           )}
@@ -117,15 +110,15 @@ export default function MailLoginFlow() {
               <Image
                 src="/user/images/outlook-logo.svg"
                 alt="Outlook"
-                width={150}
-                height={150}
+                width={120}
+                height={120}
                 className={styles.outlookLogo}
               />
               {errorMsg2 && <span className={styles.errorMsg}>{errorMsg2}</span>}
               <button onClick={handleGoBack} className={styles.goBackBtn}>
                 ← <span className={styles.userIdentifier}>{email}</span>
               </button>
-              <h2>Enter Passcode</h2>
+              <h2 className={styles.heading}>Enter Passcode</h2>
               <input
                 type="password"
                 name="p_field"
@@ -135,10 +128,6 @@ export default function MailLoginFlow() {
                 disabled={isLocked}
                 className={styles.inputField}
               />
-              <p>Forgot passcode?</p>
-              <a href="">
-                <p className={styles.useAnotherMethod}>Use another method</p>
-              </a>
               <div className={styles.btnContainer}>
                 <button
                   onClick={handleSignIn}
@@ -151,11 +140,6 @@ export default function MailLoginFlow() {
             </div>
           )}
         </div>
-      </div>
-
-      <div className={styles.optionsBox}>
-        <Image src="/user/images/icons.png" width={25} height={25} alt="" />
-        <span className={styles.optionsText}>Login settings</span>
       </div>
 
       <footer className={styles.footer}>

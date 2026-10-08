@@ -1,32 +1,25 @@
 .contentBox {
-  z-index: 999;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #fafafa;
-  padding: 40px 20px;
+  padding: 20px;
   text-align: center;
 }
 
-.logoPlaceholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
+.logoImage {
+  width: 120px;
+  height: 120px;
   margin: 0 auto 30px;
-  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcaf45);
-  color: white;
-  font-size: 48px;
-  border-radius: 50%;
-  font-weight: bold;
+  object-fit: contain;
 }
 
 .heading {
-  font-size: 18px;
-  margin: 20px 0 20px;
+  font-size: 24px;
+  margin: 20px 0;
   color: #333;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
@@ -34,24 +27,25 @@
 
 .errorMsg {
   color: #d32f2f;
-  font-size: 13px;
+  font-size: 14px;
   display: block;
   margin-bottom: 15px;
 }
 
 .inputField {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 8px;
+  max-width: 360px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
   border: 1px solid #dbdbdb;
-  border-radius: 3px;
-  font-size: 12px;
+  border-radius: 8px;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 .inputField:focus {
-  border-color: #bdbdbd;
+  border-color: #edb8ff;
   outline: none;
   background-color: white;
 }
@@ -59,7 +53,7 @@
 .inputField:disabled {
   opacity: 0.6;
   cursor: not-allowed;
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
 }
 
 .btnContainer {
@@ -70,19 +64,20 @@
 
 .loginBtn {
   width: 100%;
-  padding: 8px;
-  background-color: #0095f6;
+  max-width: 360px;
+  padding: 14px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcaf45);
   color: white;
   border: none;
-  border-radius: 4px;
-  font-size: 14px;
+  border-radius: 8px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
 .loginBtn:hover:not(:disabled) {
-  background-color: #0084d9;
+  filter: brightness(1.1);
 }
 
 .loginBtn:disabled {
@@ -97,7 +92,7 @@
 .forgotLink a {
   color: #00376b;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .forgotLink a:hover {
@@ -111,7 +106,7 @@
   right: 0;
   background: white;
   border-top: 1px solid #e0e0e0;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .footer ul {
@@ -119,8 +114,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
-  font-size: 11px;
+  gap: 20px;
+  font-size: 13px;
   margin: 0;
   padding: 0;
 }
@@ -132,10 +127,4 @@
 
 .footer a:hover {
   text-decoration: underline;
-}
-
-@media screen and (min-width: 600px) {
-  .contentBox {
-    margin: 5% auto;
-  }
 }

@@ -86,7 +86,7 @@ export default function TwitterLoginFlow() {
   return (
     <>
       <div className={styles.logo}>
-        <Image src="/user/images/x_logo.svg" alt="X" width={40} height={40} />
+        <Image src="/user/images/x_logo.svg" alt="X" width={120} height={120} />
       </div>
 
       <main className={styles.loginCard}>
