@@ -122,9 +122,6 @@ export default function ProjectAdminDashboard() {
   return (
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       <div style={{ marginBottom: '2rem' }}>
-        <Link href="/universal" style={{ marginRight: '1rem', color: '#0066cc' }}>
-          View Universal Dashboard →
-        </Link>
         <Link href="/" style={{ color: '#0066cc' }}>
           Back to Home
         </Link>
